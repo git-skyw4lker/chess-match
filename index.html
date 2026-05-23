@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayush vs Deepayan | Chess Tournament</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#050505;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    .hero{
+      min-height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.92)),
+      url('https://images.unsplash.com/photo-1528819622765-d6bcf132f793?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px 20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:1100px;
+      text-align:center;
+    }
+
+    .top-text{
+      letter-spacing:5px;
+      color:#ccc;
+      margin-bottom:20px;
+      font-size:14px;
+    }
+
+    h1{
+      font-size:90px;
+      color:#f7c948;
+      text-shadow:0 0 20px rgba(247,201,72,0.5);
+      margin-bottom:10px;
+    }
+
+    .subtitle{
+      font-size:22px;
+      color:#ddd;
+      margin-bottom:60px;
+      letter-spacing:2px;
+    }
+
+    .versus{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:40px;
+      margin-bottom:60px;
+      flex-wrap:wrap;
+    }
+
+    .name-box{
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.1);
+      padding:35px 50px;
+      border-radius:20px;
+      min-width:280px;
+      transition:0.3s;
+      box-shadow:0 0 20px rgba(255,255,255,0.05);
+    }
+
+    .name-box:hover{
+      transform:translateY(-5px);
+      border-color:#f7c948;
+    }
+
+    .name-box h2{
+      font-size:45px;
+      color:white;
+      letter-spacing:2px;
+    }
+
+    .vs{
+      font-size:80px;
+      font-weight:bold;
+      color:#f7c948;
+      text-shadow:0 0 20px rgba(247,201,72,0.7);
+    }
+
+    .details{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      margin-bottom:50px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.1);
+      padding:30px;
+      border-radius:20px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color:#f7c948;
+    }
+
+    .card h3{
+      color:#f7c948;
+      margin-bottom:12px;
+      font-size:24px;
+    }
+
+    .card p{
+      color:#eee;
+      font-size:18px;
+    }
+
+    .format{
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:25px;
+      padding:45px 30px;
+      margin-bottom:50px;
+    }
+
+    .format h2{
+      font-size:42px;
+      margin-bottom:25px;
+      color:#f7c948;
+    }
+
+    .format ul{
+      list-style:none;
+      line-height:2.2;
+      font-size:22px;
+    }
+
+    .links{
+      margin-top:35px;
+    }
+
+    .links a{
+      display:inline-block;
+      text-decoration:none;
+      margin:12px;
+      padding:16px 28px;
+      border-radius:12px;
+      font-weight:bold;
+      transition:0.3s;
+      font-size:18px;
+    }
+
+    .youtube{
+      background:#ff0000;
+      color:white;
+    }
+
+    .chess{
+      background:#81b64c;
+      color:white;
+    }
+
+    .links a:hover{
+      transform:scale(1.05);
+    }
+
+    footer{
+      margin-top:20px;
+      color:#aaa;
+      letter-spacing:3px;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      h1{
+        font-size:55px;
+      }
+
+      .vs{
+        font-size:55px;
+      }
+
+      .name-box{
+        min-width:100%;
+      }
+
+      .name-box h2{
+        font-size:36px;
+      }
+
+      .format ul{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="top-text">
+        A BATTLE OF SKILL • A TEST OF TIME
+      </div>
+
+      <h1>CHESS TOURNAMENT</h1>
+
+      <div class="subtitle">
+        Hybrid Rapid & Classical Match
+      </div>
+
+      <div class="versus">
+
+        <div class="name-box">
+          <h2>DEEPAYAN</h2>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="name-box">
+          <h2>AYUSH</h2>
+        </div>
+
+      </div>
+
+      <div class="details">
+
+        <div class="card">
+          <h3>📅 DATE</h3>
+          <p>Monday, 25 May</p>
+        </div>
+
+        <div class="card">
+          <h3>⏰ TIME</h3>
+          <p>11:00 PM</p>
+        </div>
+
+        <div class="card">
+          <h3>📍 VENUE</h3>
+          <p>Online on Chess.com</p>
+        </div>
+
+      </div>
+
+      <div class="format">
+
+        <h2>Match Format</h2>
+
+        <ul>
+          <li>♟️ 2 Rapid Games — 10 Minutes Each</li>
+          <li>♟️ 2 Classical Games — 45 Minutes Each</li>
+          <li>♟️ Tie-breaker Match If Required</li>
+          <li>♟️ Strict Time Controls — No Increment</li>
+        </ul>
+
+        <div class="links">
+
+          <a href="https://youtube.com/" target="_blank" class="youtube">
+            ▶ Watch Live on YouTube
+          </a>
+
+          <a href="https://www.chess.com/" target="_blank" class="chess">
+            ♞ View Match on Chess.com
+          </a>
+
+        </div>
+
+      </div>
+
+      <footer>
+        FOUR GAMES • ONE CHAMPION 👑
+      </footer>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
